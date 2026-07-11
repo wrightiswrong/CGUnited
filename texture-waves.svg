@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <path d="M -20 -30 C 40 -70, 80 10, 140 -30 S 240 -70, 300 -30" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.05"/>
+  <path d="M -20 -14 C 40 -54, 80 26, 140 -14 S 240 -54, 300 -14" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.035"/>
+  <path d="M -20 30 C 40 -10, 80 70, 140 30 S 240 -10, 300 30" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.05"/>
+  <path d="M -20 46 C 40 6, 80 86, 140 46 S 240 6, 300 46" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.035"/>
+  <path d="M -20 90 C 40 50, 80 130, 140 90 S 240 50, 300 90" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.05"/>
+  <path d="M -20 106 C 40 66, 80 146, 140 106 S 240 66, 300 106" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.035"/>
+  <path d="M -20 150 C 40 110, 80 190, 140 150 S 240 110, 300 150" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.05"/>
+  <path d="M -20 166 C 40 126, 80 206, 140 166 S 240 126, 300 166" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.035"/>
+  <path d="M -20 210 C 40 170, 80 250, 140 210 S 240 170, 300 210" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.05"/>
+  <path d="M -20 226 C 40 186, 80 266, 140 226 S 240 186, 300 226" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.035"/>
+</svg>
