@@ -63,8 +63,44 @@ config for this project.
 - Not yet connected as a Cowork Project on either machine.
 - Whether `gh-pages` should eventually be redeployed from the current `main`
   source, or left as-is, hasn't been decided — don't touch that branch
-  without asking.
+  without asking. **Update:** confirmed in `PROJECT_HISTORY.md` that
+  `gh-pages` is the actual live URL used at the CG United expo booth, not
+  just an old build — treat it as production, not disposable.
 - `package.json` name field is still the generic `"app"`.
+
+## 2026-08-19 — Setup — Full project history reconstructed and committed
+
+The original Cowork chat this project started in ("Expo booth insurance
+game," still connected to the old `C:\Users\test\Desktop\CG Game Final`
+path) was asked to reconstruct the entire project history from scratch,
+since that context predates this repo's existence and was otherwise at risk
+of being lost. It mined its own raw session transcript plus the actual
+proposal/summary docx files and lead spreadsheet to produce a complete
+account. Saved here as `PROJECT_HISTORY.md` — covers the full design
+history (concept pivots, economy rebalances, branding sourcing), the
+complete CG United commercial relationship (results, the licensing proposal
+terms in full, payment structure, what's approved vs. still pending), and a
+"facts that only existed in chat" section (exact game economy reasoning,
+the offline kiosk's localStorage/Chrome-profile leaderboard gotcha, port
+list rationale, pricing negotiation backstory).
+
+Two concrete action items surfaced that Don should know about:
+- **A GitHub personal access token used to originally push to GitHub Pages
+  was flagged as worth revoking and was never confirmed done** — check
+  github.com/settings/tokens.
+- `README.md` in this repo is stale (still describes the earlier
+  $10,000-vs-$12,000 economy, not the shipped $10,000-vs-$20,000 version) —
+  low priority, but misleading if anyone reads it for current numbers.
+
+**Still open:**
+- GitHub PAT revocation — unconfirmed either way.
+- `README.md` staleness — not fixed.
+- The licensing proposal (US$13,600 recommended package) is finished but
+  not yet sent to CG United; the cover email is drafted but not sent either.
+- Six bonus project ideas pitched to CG United's contact Karen are
+  unresponded-to.
+- Physical kiosk machine folder cleanup at CG United's end was recommended,
+  never confirmed done.
 
 ## 2026-08-18 — Setup — Cloned to Mac; business docs split out to Drive
 

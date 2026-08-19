@@ -11,6 +11,18 @@ Jamaica "Build Your Future" case study referenced in the WrightWorks brand
 work (`Jamaica Consulting Biz` project) — 71 completed plays, 60 qualified
 leads, ~85% play-to-lead conversion, zero downtime, per that case study.
 
+**Read `PROJECT_HISTORY.md` before doing any real work here.** It's the full
+design, technical, and commercial history — game economy reasoning, CG
+United's brand facts, the licensing proposal terms and status, and several
+operational gotchas (especially around the offline kiosk's leaderboard data)
+that aren't written down anywhere else. This file (`CLAUDE.md`) only covers
+day-to-day working rules; `PROJECT_HISTORY.md` covers what and why.
+
+**Do not touch, redeploy, or overwrite the `gh-pages` branch without
+explicit confirmation from Don** — it's the live URL
+(https://wrightiswrong.github.io/CGUnited/) that was actually used at the
+CG United expo booth, not just an old build to discard.
+
 ## Start of every session
 
 ```bash
@@ -72,9 +84,9 @@ the existing `CG-United-Build-Your-Future.md` case study writeup, since it's
 the same client relationship. Don't recreate these files here; if a task
 needs them, point to that Drive folder instead.
 
-A few leftover duplicate copies may still be sitting in this working
-directory / early git history from before the split — if you see them, flag
-it to Don rather than assuming they're current or authoritative.
+(Leftover duplicate copies from before the split were removed and pushed on
+2026-08-18 — see `PROJECT_LOG.md`. If you ever see one reappear, flag it
+rather than assuming it's current.)
 
 ## Project log — keep this current
 
