@@ -31,10 +31,68 @@ This is the kiosk experience behind the CG United Insurance Jamaica "Build
 Your Future" case study cited in the WrightWorks brand work.
 
 **Still open:**
-- Repo not yet `git init`'d — Don is running the init/commit/push commands
-  himself (same reason as `xodus-phase0a`: needs his real GitHub auth, not
-  available from inside a Cowork session).
 - Not yet cloned to the Mac.
 - Not yet connected as a Cowork Project on either machine.
 - `package.json` name field is still the generic `"app"` — worth renaming
   once there's a real settled project name, not urgent.
+
+## 2026-08-18 — Setup — Pushed to GitHub (wrightiswrong/CGUnited)
+
+Repo initialized, committed (90 files, 7229 insertions), and pushed. Ran into
+two setup snags first: no global git identity configured on this machine yet
+(fixed with `git config --global user.email/user.name`), and `gh` CLI isn't
+installed on Windows — unlike the Mac, Windows push auth goes through the
+bundled Git Credential Manager instead, so the GitHub repo had to be created
+via the website rather than `gh repo create`.
+
+The originally-planned repo name (`cg-game-final`, new and empty) was never
+actually created — Don instead pointed this at an existing repo,
+**`wrightiswrong/CGUnited`**, which already had one commit on a `gh-pages`
+branch (a deployed build of an earlier version: `index.html`, `assets/`,
+plus the same `favicon.svg`/`icons.svg`/`texture-waves.svg` seen in this
+repo's `public/`). This repo's full source pushed cleanly to a new `main`
+branch — since `main` didn't already exist there, nothing on `gh-pages` was
+touched or at risk. Both branches now coexist: `gh-pages` still serves
+whatever was previously deployed, `main` is this repo's actual source.
+
+**Remote is `https://github.com/wrightiswrong/CGUnited.git`, not
+`cg-game-final`** — use this name in any future setup, cloning, or CI/deploy
+config for this project.
+
+**Still open:**
+- Not yet connected as a Cowork Project on either machine.
+- Whether `gh-pages` should eventually be redeployed from the current `main`
+  source, or left as-is, hasn't been decided — don't touch that branch
+  without asking.
+- `package.json` name field is still the generic `"app"`.
+
+## 2026-08-18 — Setup — Cloned to Mac; business docs split out to Drive
+
+Mac clone completed at `~/Dev/cg-game-final` (cloned from
+`wrightiswrong/CGUnited`). Hit two snags, both resolved: the clone checked
+out `gh-pages` by default (old deployed build, no `package.json`) — fixed
+with `git checkout main` — and a stray untracked `package-lock.json` blocked
+that checkout, removed since it wasn't tracked. `npm install` then completed
+clean (71 packages; the 4 audit vulnerabilities are standard dependency
+noise, not new).
+
+Separately: the business documents that were committed alongside the code
+(Business Value Summary, licensing proposal, lead spreadsheet, outreach
+emails, mockup screenshots) moved out to Google Drive — they're client
+material, not code, and belong in the same place as everything else
+WrightWorks does with clients. Final location:
+`Jamaica Consulting Biz` (Drive project) →
+`WrightWorks Brand/Case Studies/CG United/`, alongside the existing
+`CG-United-Build-Your-Future.md` writeup for the same case study.
+
+**Still open:**
+- **The duplicate copies of those files are still sitting in this repo's
+  working directory and in git history** (from the initial commit, before
+  the split) — couldn't be removed via Cowork's file access (permission
+  restriction on this specific folder from that session). Don needs to
+  delete them locally in Windows Explorer or PowerShell, then
+  `git add -A && git commit -m "Remove business docs, moved to Drive" && git push`,
+  and pull that removal down on the Mac afterward.
+- Not yet connected as a Cowork Project on either machine.
+- `gh-pages` redeploy decision still open.
+- `package.json` name field is still the generic `"app"`.

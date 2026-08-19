@@ -60,15 +60,21 @@ network access — `git pull`/`git push` should work as written above.
 - Never write an absolute path (`C:\...` or `/Users/...`) into a committed
   file — paths differ between Windows and Mac.
 
-## What's in this folder besides code
+## Business documents — moved out, not part of this repo
 
-A handful of business documents live alongside the code (`Build Your Future -
-Business Value Summary.docx`, the licensing/services proposal, lead-tracking
-spreadsheet, outreach emails, mockup screenshots `pg-*.jpg`/`v*pg-*.jpg`).
-These are small and harmless to keep versioned here, but they're client/
-business material, not code — don't treat them as something to refactor or
-reorganize without asking, and don't assume they're current; check with me
-before quoting numbers from them in anything client-facing.
+The business documents that used to sit alongside the code here (`Build Your
+Future - Business Value Summary.docx`, the licensing/services proposal,
+lead-tracking spreadsheet, outreach emails, mockup screenshots) have moved to
+Google Drive, since they're client material, not code, and don't need
+version control the same way. They now live in the `Jamaica Consulting Biz`
+Drive project, in `WrightWorks Brand/Case Studies/CG United/` — right next to
+the existing `CG-United-Build-Your-Future.md` case study writeup, since it's
+the same client relationship. Don't recreate these files here; if a task
+needs them, point to that Drive folder instead.
+
+A few leftover duplicate copies may still be sitting in this working
+directory / early git history from before the split — if you see them, flag
+it to Don rather than assuming they're current or authoritative.
 
 ## Project log — keep this current
 
